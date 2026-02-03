@@ -12,6 +12,11 @@ window.onload = function(){
     var PrillidBoonus = 5;
     var PrillidLevel = 0;
 
+    // TAARA UUENDUS
+    var TaaraCost = 4000;
+    var TaaraBoonus = 10;
+    var TaaraLevel = 0;
+
     // RAHA OTSIMINE
     document.getElementById("increment").onclick = function(){
         Eurod = Eurod + EuroLeid;
@@ -26,6 +31,8 @@ window.onload = function(){
         document.getElementById("PrillidCost").innerHTML = PrillidCost;
         document.getElementById("eurode_kogus").innerHTML = Math.floor(Eurod);
         document.getElementById("EuroLeid").innerHTML = Math.floor(EuroLeid);
+        document.getElementById("TaaraLevel").innerHTML = TaaraLevel;
+        document.getElementById("TaaraCost").innerHTML = TaaraCost;
     }
 
     // MAGNET OST
@@ -37,7 +44,6 @@ window.onload = function(){
             MagnetCost = Math.floor(2.6 * MagnetCost);
             update();
         }
-        update_euro_total;
     }
 
     // PRILLID OST
@@ -49,8 +55,17 @@ window.onload = function(){
             PrillidCost = Math.floor(2.6 * PrillidCost);
             update();
         }
-        update_euro_total;
     }
 
+    // TAARA OST
+    document.getElementById("taara_osta").onclick = function(){
+        if (Eurod >= TaaraCost){
+            Eurod -= TaaraCost;
+            TaaraLevel += 1;
+            EuroLeid += Math.floor(TaaraBoonus);
+            TaaraCost = Math.floor(2.6 * TaaraCost);
+            update();
+        }
+    }
     update();
 }
