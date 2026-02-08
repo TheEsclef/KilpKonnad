@@ -130,7 +130,7 @@ window.onload = function(){
 
         PlayerHP = PlayerMaxHP;
         await sleep(200);
-        document.getElementById("enemyimg").src = " ";
+        document.getElementById("enemyimg").src = "";
     }
 
     // Rotti sisse spawnimine
