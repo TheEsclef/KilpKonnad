@@ -1,0 +1,379 @@
+body{
+    background-image: url(./image/background.png);
+    background-repeat: repeat;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.wrap{
+    height: 95vh;
+    width: 85vw;
+    background-color: grey;
+    border-style: solid;
+    display: inline-flex;
+}
+
+.kast{
+    width: 50vw;
+    height: 10vh;
+    background-color: blueviolet;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.keskel{
+    width: 50vw;
+    height: 95vh;
+    border-left: solid;
+    border-right: solid;
+    display: grid;
+}
+
+.top1{
+    background-color: red;
+    width: 50%;
+    border-right: solid;
+    border-bottom: solid;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.top2{
+    background-color: green;
+    width: 50%;
+    border-left-style: solid;
+    border-bottom: solid;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.game{
+    width: 50vw;
+    height: 85vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./image/game.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+}
+
+.enemy{
+    width: auto;
+    height: 25vh;
+}
+
+.vasak{
+    width: 17.5vw;
+    height: 95vh;
+}
+
+.GPjaXP{
+    width: 17.5vw;
+    height: 5vh;
+    display: inline-flex;
+}
+
+.GP{
+    width: 50%;
+    height: 5vh;
+    background-color:tomato;
+    border-bottom: solid;
+    border-right: solid;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.XP{
+    width: 50%;
+    height: 5vh;
+    background-color: blueviolet;
+    border-bottom: solid;
+    border-left: solid;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Level{
+    width: 100%;
+    height: 15vh;
+    background-color: black;
+    display: -ms-grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.Upgradid{
+    width: 100%;
+    height: 30vh; 
+}
+
+.Upgrade1{
+    width: 100%;
+    height: 10vh;
+    background-color: yellowgreen;
+    border-bottom: solid;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.Upgrade1:hover{
+    background-color:darkolivegreen;
+}
+.Upgrade1:active{
+    background-color: darkgreen;
+}
+
+.Upgrade2{
+    width: 100%;
+    height: 10vh;
+    background-color: chartreuse;
+    border-bottom: solid;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.Upgrade2:hover{
+    background-color:springgreen;
+}
+.Upgrade2:active{
+    background-color: darkgreen;
+}
+
+.Upgrade3{
+    width: 100%;
+    height: 10vh;
+    background-color:cornflowerblue;
+    border-bottom: solid;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.Upgrade3:hover{
+    background-color: lightseagreen;
+}
+.Upgrade3:active{
+    background-color: blue;
+}
+
+.Elustamine{
+    width: 100%;
+    height: 10vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: aqua;
+    border-top: solid;
+    border-bottom: solid;
+}
+.Elustamine:hover{
+    background-color: aquamarine;
+}
+.Elustamine:active{
+    background-color: lightskyblue;
+}
+
+.OtsiRingi{
+    width: 100%;
+    height: 10vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: crimson;
+    border-bottom: solid;
+}
+.OtsiRingi:hover{
+    background-color: red;
+}
+.OtsiRingi:active{
+    background-color: brown;
+}
+
+.Statistika{
+    width: 100%;
+    height: 24vh;
+}
+.StatTiitel{
+    width: 17.5vw;
+    height: 4vh;
+    border-bottom: solid;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+.KillCount{
+    width: 17.5vw;
+    height: 5vh;
+    border-bottom: solid;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+
+.parem{
+    width: 17.4vw;
+    height: 95vh;
+}
+
+.Enemy{
+    width: 100%;
+    height: 30vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.EnemyName{
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.EnemyStats{
+    width: 100%;
+    height: 20vh;
+}
+
+.EnemyStatid{
+    width: 100%;
+    height: 10vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.EnemyText{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: bolder;
+}
+
+.loot{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 40vh;
+}
+
+.EnemyLoot{
+    width: 100%;
+    height: 10vh;
+    background-color: aqua;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-top: solid; color: white;
+}
+
+.EnemyGP{
+    width: 100%;
+    height: 15vh;
+    background-color: blue;
+    border-top: solid;
+    border-bottom: solid;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.EnemyXP{
+    width: 100%;
+    height: 15vh;
+    border-top: solid;
+    border-bottom: solid;
+    background-color: brown;
+    background-size:cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.combat{
+    height: 25vh;
+    width: 100%;
+}
+
+.attack{
+    height: 14vh;
+    width: 100%;
+    background-color: red;
+    border-top: solid;
+    border-bottom: solid;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+.attack:hover{
+    background-color: brown;
+}
+.attack:active{
+    background-color: darkred;
+}
+
+.flee{
+    height: 10vh;
+    width: 100%;
+    background-color: chocolate;
+    border-top: solid;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+.flee:hover{
+    background-color:coral;
+}
+.flee:active{
+    background-color: darkred;
+}
+
+.combattext{
+    text-align: center;
+    font-size: 2vw;
+    font-weight: bolder;
+    user-select: none;
+}
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3vh;
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.footer3{
+    height: 2vh;
+    width: 6vw;
+    background-color: orangered;
+    border-style: solid;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.footer3:hover{
+    background-color: red;
+}
+
+.footer3:active{
+    background-color: darkred;
+}
