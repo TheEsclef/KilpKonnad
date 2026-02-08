@@ -47,10 +47,36 @@ window.onload = function(){
 
     // SALVESTAB JA LAEB
     const load = JSON.parse(localStorage.getItem("save"));
-    if (load) {PlayerHP = load.PlayerHP; PlayerMaxHP = load.PlayerMaxHP; PlayerDMG = load.PlayerDMG; GP = load.GP; XP = load.XP; XPleft = load.XPleft; ZoneLvl = load.ZoneLvl; }
-    if (load) {SwordLvlBonus = load.SwordLvlBonus; SwordLvlCost = load.SwordLvlCost; SwordLvl = load.SwordLvl; ShieldLvlCost = load.ShieldLvlCost; ShieldLvlBonus = load.ShieldLvlBonus; ShieldLvl = load.ShieldLvl}
-    if (load) {BandageLvl = load.BandageLvl; BandageLvlBonus = load.BandageLvlBonus; BandageCost = load.BandageCost, KillCount = load.KillCount}
-    if (load) {EnemyNimi = load.EnemyNimi; EnemyMaxHP = load.EnemyMaxHP; EnemyXP = load.EnemyXP; EnemyGP = load.EnemyGP; EnemyDMG = load.EnemyDMG; EnemyHP = load.EnemyHP; EnemyLvl = load.EnemyLvl;}
+    if (load) {
+        PlayerHP = load.PlayerHP;
+        PlayerMaxHP = load.PlayerMaxHP;
+        PlayerDMG = load.PlayerDMG;
+        GP = load.GP;
+        XP = load.XP;
+        XPleft = load.XPleft;
+        ZoneLvl = load.ZoneLvl;
+    
+        SwordLvlBonus = load.SwordLvlBonus;
+        SwordLvlCost = load.SwordLvlCost;
+        SwordLvl = load.SwordLvl;
+    
+        ShieldLvlCost = load.ShieldLvlCost;
+        ShieldLvlBonus = load.ShieldLvlBonus;
+        ShieldLvl = load.ShieldLvl;
+    
+        BandageLvl = load.BandageLvl;
+        BandageLvlBonus = load.BandageLvlBonus;
+        BandageCost = load.BandageCost;
+        KillCount = load.KillCount;
+    
+        EnemyNimi = load.EnemyNimi;
+        EnemyMaxHP = load.EnemyMaxHP;
+        EnemyXP = load.EnemyXP;
+        EnemyGP = load.EnemyGP;
+        EnemyDMG = load.EnemyDMG;
+        EnemyHP = load.EnemyHP;
+        EnemyLvl = load.EnemyLvl;
+    }
 
     function SaveGame() {
         const saveData = {PlayerHP, PlayerMaxHP, PlayerDMG, GP, XP, XPleft, ZoneLvl,
