@@ -207,7 +207,7 @@ window.onload = function(){
     }
     this.document.getElementById("Heal").onclick =function(){
         if (PlayerHP < PlayerMaxHP){
-            PlayerHP = PlayerHP + (BandageLvlBonus * PlayerLVL);
+            PlayerHP = PlayerHP + BandageLvlBonus;
             UpdatePlayer();
         }
     }
