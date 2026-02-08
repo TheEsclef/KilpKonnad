@@ -221,7 +221,7 @@ window.onload = function(){
             GP = GP - SwordLvlCost;
             SwordLvlCost = Math.ceil(SwordLvlCost * 1.6);
             SwordLvl = SwordLvl + 1;
-            SwordLvlBonus = SwordLvlBonus + 1;
+            SwordLvlBonus = 1 * PlayerLVL;
         }
         PlayerDMG = (PlayerLVL * SwordLvlBonus);
         UpdatePlayer();
@@ -233,7 +233,7 @@ window.onload = function(){
             GP = GP - ShieldLvlCost;
             ShieldLvlCost = Math.ceil(ShieldLvlCost * 1.6);
             ShieldLvl = ShieldLvl + 1;
-            ShieldLvlBonus = ShieldLvlBonus + 1;
+            ShieldLvlBonus = 5 * PlayerLVL;
         } 
         UpdatePlayer();
         UpdateStore();
@@ -247,7 +247,7 @@ window.onload = function(){
             GP = GP - BandageLvlCost;
             BandageLvlCost = Math.ceil(BandageLvlCost * 1.6);
             BandageLvl = BandageLvl + 1;
-            BandageLvlBonus = BandageLvlBonus + 1;
+            BandageLvlBonus = 1 * PlayerLVL;
         }
         UpdatePlayer();
         UpdateStore();
