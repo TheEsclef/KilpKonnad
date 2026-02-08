@@ -8,10 +8,10 @@ window.onload = function(){
 
     // Upgradid
     var SwordLvlBonus = 1;
-    var SwordLvlCost = 25;
+    var SwordLvlCost = 10;
     var ShieldLvlBonus = 5;
-    var ShieldLvlCost = 20;
-    var BandageCost = 50;
+    var ShieldLvlCost = 10;
+    var BandageCost = 20;
     var BandageLvlBonus = 1;
 
     // Mängija statid
@@ -130,7 +130,7 @@ window.onload = function(){
 
         PlayerHP = PlayerMaxHP;
         await sleep(200);
-        document.getElementById("enemyimg").src = "";
+        document.getElementById("enemyimg").src = " ";
     }
 
     // Rotti sisse spawnimine
@@ -149,7 +149,7 @@ window.onload = function(){
         PlayerMaxHP = (PlayerLVL * ShieldLvlBonus) + 15;
         Combat();
         // Vastane sureb
-        if (EnemyHP <= 0){
+        if ((EnemyHP <= 0) && !(EnemyNimi === "Täielik Tühjus")){
             GP = EnemyGP + GP;
             XP = EnemyXP + XP;
             KillCount = KillCount + 1;
@@ -190,11 +190,48 @@ window.onload = function(){
         UpdateEnemy();
         UpdatePlayer();
     }
+    this.document.getElementById("SwordUpgrade").onclick = function(){
+        if (GP >= SwordLvlCost){
+            GP = GP - SwordLvlCost;
+            SwordLvlCost = Math.ceil(SwordLvlCost * 1.6);
+            SwordLvl = SwordLvl + 1;
+            SwordLvlBonus = SwordLvlBonus + 1;
+        }
+        PlayerDMG = (PlayerLVL * SwordLvlBonus);
+        UpdatePlayer();
+        UpdateStore();
+        SaveGame(); 
+    }
+    this.document.getElementById("ShieldUpgrade").onclick = function (){
+        if (GP >= ShieldLvlCost){
+            GP = GP - ShieldLvlCost;
+            ShieldLvlCost = Math.ceil(ShieldLvlCost * 1.6);
+            ShieldLvl = ShieldLvl + 1;
+            ShieldLvlBonus = ShieldLvlBonus + 1;
+        } 
+        UpdatePlayer();
+        UpdateStore();
+        SaveGame();
+        PlayerMaxHP = (PlayerLVL * ShieldLvlBonus) + 15;
+        PlayerHP = PlayerMaxHP;
+    }
+
+    this.document.getElementById("BandageUpgrade").onclick = function () {
+    if (GP >= BandageLvlCost) {
+            GP = GP - BandageLvlCost;
+            BandageLvlCost = Math.ceil(BandageLvlCost * 1.6);
+            BandageLvl = BandageLvl + 1;
+            BandageLvlBonus = BandageLvlBonus + 1;
+        }
+        UpdatePlayer();
+        UpdateStore();
+        SaveGame(); 
+    }
+
 
     PlayerDMG = (PlayerLVL * SwordLvlBonus);
     PlayerMaxHP = (PlayerLVL * ShieldLvlBonus) + 15;
     PlayerHP = PlayerMaxHP;
-
     if (!load) {
         SpawnRat();
     }
