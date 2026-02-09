@@ -153,7 +153,8 @@ window.onload = function(){
         EnemyDMG = 0;
         EnemyGP = 0;
         EnemyXP = 0;
-
+        PlayerDMG = (PlayerLVL * SwordLvlBonus);
+        PlayerMaxHP = (PlayerLVL * ShieldLvlBonus) + 15;
         PlayerHP = PlayerMaxHP;
         await sleep(200);
         document.getElementById("enemyimg").src = "";
@@ -221,7 +222,8 @@ window.onload = function(){
             GP = GP - SwordLvlCost;
             SwordLvlCost = Math.ceil(SwordLvlCost * 1.6);
             SwordLvl = SwordLvl + 1;
-            SwordLvlBonus = 1 * PlayerLVL;
+            SwordLvlBonus = SwordLvlBonus + 1;
+            PlayerDMG = SwordLvlBonus * PlayerLVL;
         }
         PlayerDMG = (PlayerLVL * SwordLvlBonus);
         UpdatePlayer();
@@ -233,7 +235,7 @@ window.onload = function(){
             GP = GP - ShieldLvlCost;
             ShieldLvlCost = Math.ceil(ShieldLvlCost * 1.6);
             ShieldLvl = ShieldLvl + 1;
-            ShieldLvlBonus = 5 * PlayerLVL;
+            ShieldLvlBonus = 5 * PlayerLVL + ShieldLvlBonus;
         } 
         UpdatePlayer();
         UpdateStore();
@@ -247,7 +249,7 @@ window.onload = function(){
             GP = GP - BandageLvlCost;
             BandageLvlCost = Math.ceil(BandageLvlCost * 1.6);
             BandageLvl = BandageLvl + 1;
-            BandageLvlBonus = 1 * PlayerLVL;
+            BandageLvlBonus = 1 * PlayerLVL + BandageLvlBonus;
         }
         UpdatePlayer();
         UpdateStore();
