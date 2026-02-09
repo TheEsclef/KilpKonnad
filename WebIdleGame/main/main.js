@@ -16,7 +16,7 @@ window.onload = function(){
 
     // Mängija statid
     var PlayerDMG = PlayerLVL * SwordLvlBonus;
-    var PlayerMaxHP = (PlayerLVL * ShieldLvlBonus) + 15;
+    var PlayerMaxHP = (PlayerLVL * ShieldLvl) + 15;
     var PlayerHP = PlayerMaxHP;
     var PlayerLVL = 1;
     var SwordLvl = 1;
@@ -153,7 +153,7 @@ window.onload = function(){
         EnemyDMG = 0;
         EnemyGP = 0;
         EnemyXP = 0;
-        PlayerDMG = (PlayerLVL * SwordLvlBonus);
+        PlayerDMG = (PlayerLVL * SwordLvl);
         PlayerMaxHP = (PlayerLVL * ShieldLvlBonus) + 15;
         PlayerHP = PlayerMaxHP;
         await sleep(200);
@@ -172,8 +172,8 @@ window.onload = function(){
         EnemyXP = Math.floor(Math.random() * ((ZoneLvl * EnemyLvl)) * 4) + 1;
     }
     document.getElementById("attack").onclick = function(){
-        PlayerDMG = PlayerLVL * SwordLvlBonus;
-        PlayerMaxHP = (PlayerLVL * ShieldLvlBonus) + 15;
+        PlayerDMG = PlayerLVL * SwordLvl;
+        PlayerMaxHP = (PlayerLVL * ShieldLvl) + 15;
         Combat();
         // Vastane sureb
         if ((EnemyHP <= 0) && !(EnemyNimi === "Täielik Tühjus")){
@@ -222,8 +222,8 @@ window.onload = function(){
             GP = GP - SwordLvlCost;
             SwordLvlCost = Math.ceil(SwordLvlCost * 1.6);
             SwordLvl = SwordLvl + 1;
-            SwordLvlBonus = SwordLvlBonus + 1;
-            PlayerDMG = SwordLvlBonus * PlayerLVL;
+            SwordLvlBonus = 1 * PlayerLVL;
+            PlayerDMG = SwordLvl * PlayerLVL;
         }
         PlayerDMG = (PlayerLVL * SwordLvlBonus);
         UpdatePlayer();
@@ -235,12 +235,12 @@ window.onload = function(){
             GP = GP - ShieldLvlCost;
             ShieldLvlCost = Math.ceil(ShieldLvlCost * 1.6);
             ShieldLvl = ShieldLvl + 1;
-            ShieldLvlBonus = 5 * PlayerLVL + ShieldLvlBonus;
+            ShieldLvlBonus = 5 * PlayerLVL;
         } 
         UpdatePlayer();
         UpdateStore();
         SaveGame();
-        PlayerMaxHP = (PlayerLVL * ShieldLvlBonus) + 15;
+        PlayerMaxHP = (PlayerLVL * ShieldLvl) + 15;
         PlayerHP = PlayerMaxHP;
     }
 
@@ -257,8 +257,8 @@ window.onload = function(){
     }
 
 
-    PlayerDMG = (PlayerLVL * SwordLvlBonus);
-    PlayerMaxHP = (PlayerLVL * ShieldLvlBonus) + 15;
+    PlayerDMG = (PlayerLVL * SwordLvl);
+    PlayerMaxHP = (PlayerLVL * ShieldLvl) + 15;
     PlayerHP = PlayerMaxHP;
     if (!load) {
         SpawnRat();
