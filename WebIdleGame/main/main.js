@@ -245,9 +245,9 @@ window.onload = function(){
     }
 
     this.document.getElementById("BandageUpgrade").onclick = function () {
-    if (GP >= BandageLvlCost) {
-            GP = GP - BandageLvlCost;
-            BandageLvlCost = Math.ceil(BandageLvlCost * 1.6);
+    if (GP >= BandageCost) {
+            GP = GP - BandageCost;
+            BandageLvlCost = Math.ceil(BandageCost * 1.6);
             BandageLvl = BandageLvl + 1;
             BandageLvlBonus = 1 * PlayerLVL + BandageLvlBonus;
         }
