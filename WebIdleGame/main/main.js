@@ -154,7 +154,7 @@ window.onload = function(){
         EnemyGP = 0;
         EnemyXP = 0;
         PlayerDMG = (PlayerLVL * SwordLvl);
-        PlayerMaxHP = (PlayerLVL * ShieldLvlBonus) + 15;
+        PlayerMaxHP = (PlayerLVL * ShieldLvl) + 15;
         PlayerHP = PlayerMaxHP;
         await sleep(200);
         document.getElementById("enemyimg").src = "";
