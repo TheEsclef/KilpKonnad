@@ -79,7 +79,7 @@ window.onload = function(){
     }
 
     function SaveGame() {
-        const saveData = {PlayerHP, PlayerMaxHP, PlayerDMG, GP, XP, XPleft, ZoneLvl,
+        const saveData = {PlayerHP, PlayerMaxHP, PlayerDMG, GP, XP, XPleft, ZoneLvl, PlayerLVL,
             EnemyNimi, EnemyMaxHP, EnemyXP, EnemyGP, EnemyDMG, EnemyHP, EnemyLvl,
             SwordLvl, ShieldLvl, SwordLvlBonus, SwordLvlCost, ShieldLvlBonus, ShieldLvlCost,
             BandageLvl, BandageLvlBonus, BandageCost, KillCount}
