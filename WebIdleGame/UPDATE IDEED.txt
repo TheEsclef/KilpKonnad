@@ -1,0 +1,14 @@
+UPDATE IDEED
+PRIORITEEDI JÄRJEKORRAS
+1."Automaatne" nupp vastase otsimise jaoks, et peale igat võitlust uuesti seda ise klikkama ei peaks
+2. Ekraani keskele, alumise külje poolele tuleb konsool (Teavitab nt "Sa ei saa tsoonist lahkuda, kuna oled võitluses")
+3. Koodi korrastus (Luua igale sektsioonile enda .js fail nt "PlayerStats.js" "EnemyStats.js" "ZoneInfo.js" jne)
+4. Ekraani keskele, alumise külje poolele tuleb konsool (Teavitab nt "Sa ei saa tsoonist lahkuda, kuna oled võitluses")
+5. Rünnata ja healida saab läbi keybindide (nt "w" ründamise jaoks)
+6. Rohkem Dungeon Crawler (Uus tsoon avaneb peale igat 100 killi nt)
+7. Bossid (10x HP, 3X DMG ja 8X Dropid), Peale bossi tapmist, avaneb uus tsoon
+8. Lisaks GP/XP droppidele, vastased dropivad enda jäsemeid, mida pärast poes müüa saab
+9. Save faili saab exportida ja importida
+10. Poest saad osta buffe (nt. "õlu" mis annab 5 minutilise 10% DMG buffi)
+11. Nooled tsoonide vahetamiseks
+12. Iga levelup anna ühe skillpointi, mille saab specida: DMG, HP, Regen, GoldFind, XpFind.

@@ -1,0 +1,95 @@
+.Kast0{
+    display: grid;
+    justify-items: center;
+}
+
+.Kast1{
+    background-color: brown;
+    border-color: black;
+    border-style: solid;
+    border-radius: 30px;
+    height: 150px;
+    width: 95%;
+    display: inline-table;
+}
+
+.Kast2{
+    justify-items: center;
+    display: grid;
+}
+
+.Kast3{
+    display: grid;
+    justify-items: left;
+    position: absolute;
+    background-color:chartreuse;
+    width: 200px;
+    height: 110px;
+    margin-left: 10px;
+    top: 30px;
+    border-radius: 10px;
+    border-style: solid;
+}
+
+.Kast3-1{
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+.Upgrades1{
+    height: 750px;
+    width: 600px;
+    background-color: blueviolet;
+    margin-top: 10px;
+    border-radius: 20px;
+    border-color: black;
+    border-style: solid;
+    justify-items: center;
+    display: grid;
+    margin-left: 10px;
+}
+
+.rahakokku{
+    font-weight: bolder;
+    position: relative;
+    text-transform: uppercase;
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.otsiraha{
+    margin-bottom: 20px;
+    width: 200px;
+    height: 50px;
+    
+}
+
+.upgrade{
+    width: 90%;
+    justify-items: center;
+    position: relative;
+    display:grid;
+    background-color: bisque;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 2px;
+}
+
+.upgrade-text{
+    font-weight: 900;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.upgrade-button{
+    position: relative;
+    width: 300px;
+    height: 50px;
+}
+
+body{
+    background-color: aqua;
+}
